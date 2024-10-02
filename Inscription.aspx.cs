@@ -34,6 +34,7 @@ public partial class Inscription : System.Web.UI.Page
 			ViewState["maxInscritId"] = value;
 		}
 	}
+	private test;
 	private List<T_Sessions> sourceData
 	{
 		get
