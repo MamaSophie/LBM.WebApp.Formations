@@ -34,13 +34,14 @@ public partial class Inscription : System.Web.UI.Page
 			ViewState["maxInscritId"] = value;
 		}
 	}
-	private test;
+	
 	private List<T_Sessions> sourceData
 	{
 		get
 		{
 			List<T_Sessions> retour = null;
 			var tmpModel = new ModelManager();
+			if (idSession > 0) retour = tmpModel.GetSessions(idSession, 0, true);
 			if (idSession > 0) retour = tmpModel.GetSessions(idSession, 0, true);
 			if (idFormation > 0) retour = tmpModel.GetSessions(0, idFormation, true);
 			if (typeInscription != EnumInscription.ADMININSCRIPTIONS) retour.RemoveAll(s => s.FirstDate == null || (s.FirstDate != null && s.FirstDate.Date_Session <= DateTime.Now);
