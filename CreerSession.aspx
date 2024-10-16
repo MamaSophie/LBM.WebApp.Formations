@@ -1,4 +1,4 @@
-﻿
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="CreerSession.aspx.cs" Inherits="CreerSession" %>
 <%@ Register TagPrefix="AjaxToolkit" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit"%>
 <%@ Register Src="~/UserControls/UC_Header.ascx" TagPrefix="uc" TagName="UC_Header" %>
 <%@ Register Src="~/UserControls/UC_ErrorPanel.ascx" TagPrefix="uc" TagName="UC_ErrorPanel" %>
@@ -23,7 +23,7 @@
                         <asp:Label ID="Label6" runat="server" Text="Formation:" CssClass="LibelleTB" style="display:inline;"    ></asp:Label>                         
                         <asp:DropDownList ID="DDLFormations" AutoPostBack="true" CssClass="form-control" Width="300" style="display:inline;"  runat="server"></asp:DropDownList>
                     </div>                       
-                </td> </tr>
+                
             <tr>                
                 <td style="width:30%;vertical-align:top">    
                     
