@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="CreerSession.aspx.cs" Inherits="CreerSession" %>
+﻿
 <%@ Register TagPrefix="AjaxToolkit" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit"%>
 <%@ Register Src="~/UserControls/UC_Header.ascx" TagPrefix="uc" TagName="UC_Header" %>
 <%@ Register Src="~/UserControls/UC_ErrorPanel.ascx" TagPrefix="uc" TagName="UC_ErrorPanel" %>
