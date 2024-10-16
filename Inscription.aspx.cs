@@ -18,7 +18,7 @@ public partial class Inscription : System.Web.UI.Page
 	/// 
 	/// </summary>
 
-	
+	private string strSortExpression = "Session"
 	private string strSortExpressionGV23 = "Nom"
 	private string uploadPdfFolder = "Upload/Pdf/Formations/";
 	private int typeUser = 3;
@@ -358,8 +358,7 @@ public partial class Inscription : System.Web.UI.Page
 				bindInscrits();
 			}
 		}
-		catch (Exception ex)
-		{ _log.Error("Erreur dans Inscription Page_Load", ex); }
+		
 	}
 	void BtnCancel_Click(object sender, EventArgs e)
 	{
